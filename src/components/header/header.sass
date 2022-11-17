@@ -3,8 +3,29 @@
   display: grid
   grid-template-columns: 1fr 4fr
 
-  &__navbar
+  &__navegation-button
+    background-color: transparent
+    background-image: url(../assets/icon-menu.svg)
+    background-size: cover
+    background-repeat: no-repeat
+    background-position: center center
+    width: 2.4rem
+    height: 2.4rem
+    margin-left: auto
+    border: none
+
+    @include mq-lg
+      display: none
+
+    &:hover
+      cursor: pointer
+
+  &__navegation-menu
     display: none
+
+    &.active
+      display: flex
+      flex-direction: column
 
     @include mq-lg
       display: flex
@@ -14,4 +35,3 @@
   &__login-buttons
     display: flex
     margin-left: auto
-
