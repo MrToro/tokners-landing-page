@@ -128,3 +128,8 @@ dist
 .yarn/build-state.yml
 .yarn/install-state.gz
 .pnp.*
+
+public/components
+public/css/design/
+public/css/utilities/
+public/css/components/
