@@ -1,0 +1,17 @@
+.header
+  padding: 4rem
+  display: grid
+  grid-template-columns: 1fr 4fr
+
+  &__navbar
+    display: none
+
+    @include mq-lg
+      display: flex
+      align-items: center
+      gap: 3rem
+
+  &__login-buttons
+    display: flex
+    margin-left: auto
+

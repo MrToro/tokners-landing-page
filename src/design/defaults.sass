@@ -34,6 +34,39 @@ p
     font-size: 1.6rem
     line-height: 2.4rem
 
+.btn
+  display: block
+  background-color: transparent
+  padding: 1.5rem 3rem
+  border: none
+  border-radius: 5.2rem
+  color: $color-white
+  font-weight: 700
+  font-size: 1.4rem
+  transition: all 300ms ease
+
+  &:hover
+    cursor: pointer
+
+    &:not(.btn-primary)
+      color: $color-green
+
+.btn-primary
+  background-color: $color-green
+  box-shadow: 0px 15px 25px $color-green-alpha
+
+  &:hover
+    background-color: $color-green-variant
+
+.btn-secundary
+  border: 2px solid $color-green
+
+  &:hover
+    border: 2px solid $color-green-variant
+
+.padding-0
+  padding: 0
+
 .color-bg
   color: $color-bg
 
@@ -57,30 +90,3 @@ p
 
 .font-weight-bold
   font-weight: 700
-
-.btn
-  display: block
-  background-color: transparent
-  padding: 1.5rem 3rem
-  border: none
-  border-radius: 5.2rem
-  color: $color-white
-  font-weight: 700
-  font-size: 1.4rem
-  transition: all 300ms ease
-
-  &:hover
-    cursor: pointer
-
-.btn-primary
-  background-color: $color-green
-  box-shadow: 0px 15px 25px $color-green-alpha
-
-  &:hover
-    background-color: $color-green-variant
-
-.btn-secundary
-  border: 2px solid $color-green
-
-  &:hover
-    border: 2px solid $color-green-variant
