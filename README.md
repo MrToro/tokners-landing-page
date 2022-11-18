@@ -10,14 +10,14 @@ Creation of a landing page responsive using BEM methodology and the technologies
 
 https://mrtoro.github.io/tokners-landing-page/public
 
-<!-- ## Desktop's Preview:
+## Desktop's Preview:
 
-![Image](src/assets/desktop-preview.png)
+![Image](public/assets/desktop-preview.png)
 
 ## Tablet's Preview:
 
-![Image](src/assets/tablet-preview.png)
+![Image](public/assets/tablet-preview.png)
 
 ## Mobile's Preview:
 
-![Image](src/assets/mobile-preview.png) -->
+![Image](public/assets/mobile-preview.png)
