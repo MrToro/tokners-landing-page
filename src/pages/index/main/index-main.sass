@@ -1,0 +1,35 @@
+.main
+  width: 90%
+  margin: 0 auto
+  display: grid
+  align-items: center
+
+  @include mq-xs
+    width: 80%
+
+  @include mq-sm
+    grid-template-columns: 1fr 2fr
+
+  &__info-container
+    display: flex
+    flex-direction: column
+    gap: 2rem
+
+  &__button
+    width: 15rem
+    text-align: center
+
+  &__hero
+    position: relative
+    left: -5%
+    right: 0
+    z-index: -100
+    transform: scale(2)
+    pointer-events: none
+
+    @include mq-xs
+      left: -10%
+
+    @include mq-sm
+      left: 0
+      transform: scale(1.5)
