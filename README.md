@@ -6,11 +6,11 @@ Creation of a landing page responsive using BEM methodology and the technologies
 ![SASS](https://img.shields.io/badge/SASS-hotpink.svg?style=for-the-badge&logo=SASS&logoColor=white)
 ![NPM](https://img.shields.io/badge/NPM-%23000000.svg?style=for-the-badge&logo=npm&logoColor=white)
 
-<!-- ## Live Demo
+## Live Demo
 
-https://mrtoro.github.io/fluid-rocket-landing-page/
+https://mrtoro.github.io/tokners-landing-page/public
 
-## Desktop's Preview:
+<!-- ## Desktop's Preview:
 
 ![Image](src/assets/desktop-preview.png)
 
