@@ -52,18 +52,28 @@ p
     &:not(.btn-primary)
       color: $color-green
 
-.btn-primary
-  background-color: $color-green
-  box-shadow: 0px 15px 25px $color-green-alpha
+  &-primary
+    background-color: $color-green
+    box-shadow: 0px 15px 25px $color-green-alpha
 
-  &:hover
-    background-color: $color-green-variant
+    &:hover
+      background-color: $color-green-variant
 
-.btn-secundary
-  border: 2px solid $color-green
+  &-secundary
+    border: 2px solid $color-green
 
-  &:hover
-    border: 2px solid $color-green-variant
+    &:hover
+      border: 2px solid $color-green-variant
+
+  &-radio
+    width: max-content
+    padding: 1.5rem
+    border: 3px solid $color-white-20
+    border-radius: 50%
+    transition: all 300ms ease
+
+    &:hover
+      border-color: $color-white
 
 .margin-left-auto
   margin-left: auto
@@ -80,6 +90,10 @@ p
 .color-bg
   color: $color-bg
 
+.color-white
+  color: $color-white
+  opacity: 1
+
 .color-green
   color: $color-green
 
@@ -91,6 +105,9 @@ p
 
 .color-red
   color: $color-red
+
+.text-decoration
+  text-decoration: underline
 
 .font-weight-regular
   font-weight: 400
