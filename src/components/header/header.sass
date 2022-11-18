@@ -1,7 +1,14 @@
 .header
   padding: 4rem
   display: grid
-  grid-template-columns: 1fr 4fr
+  grid-template-columns: max-content 4fr
+  align-items: center
+
+  @include mq-lg
+    gap: 8rem
+
+  &__logo
+    width: min(100%, 155px)
 
   &__navegation-button
     background-color: transparent
@@ -9,29 +16,50 @@
     background-size: cover
     background-repeat: no-repeat
     background-position: center center
+    position: relative
+    box-sizing: content-box
     width: 2.4rem
     height: 2.4rem
     margin-left: auto
-    border: none
+    border: 5px solid transparent
+    border-radius: 10%
+    transition: all 300ms ease
 
     @include mq-lg
       display: none
 
     &:hover
       cursor: pointer
+      background-color: $color-green
+      border-radius: 50%
+
+    &.active:hover
+      background-color: $color-red
 
   &__navegation-menu
     display: none
-
-    &.active
-      display: flex
-      flex-direction: column
 
     @include mq-lg
       display: flex
       align-items: center
       gap: 3rem
 
-  &__login-buttons
-    display: flex
-    margin-left: auto
+    &.active
+      position: absolute
+      top: 0
+      left: 0
+      background-color: $color-bg_alpha
+      width: 100%
+      height: 100%
+      display: flex
+      flex-direction: column
+      justify-content: center
+      align-items: center
+
+    a:not(.btn-primary)
+      @include mq-lg
+        padding: 0
+
+    a:nth-last-child(2)
+      @include mq-lg
+        margin-left: auto
